@@ -8,7 +8,7 @@
 1. 请求bank1进行转账，传入转账金额。 
 2. bank1减少转账金额，调用bank2，传入转账金额, bank2添加转账金额。
 
-#### 组成
+#### 工具
 - 数据库: MySQL 5.7。bank 1 和bank 2
 - JDK 1.8 +
 - 微服务框架: spring-boot, spring-cloud
@@ -21,6 +21,7 @@
 `bank1`库 & `bank2`库 
 - `account_info`表，`bank1`包含'张三'账户，`bank2`包含'李四'账户
 - `undo_log`表，为seata框架使用
+参考本工程`sql`目录
 
 ##### 2. 启动TC(Transaction Coordinator)
 下载：https://github.com/seata/seata/releases/  
@@ -69,4 +70,7 @@ public class DatabaseConfiguration {
     }
 }
 ```
+
+#### 执行流程
+
 
