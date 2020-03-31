@@ -12,7 +12,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableHystrix
-@EnableFeignClients(basePackages = {"cn.itcast.dtx.seatademo.bank2.spring"})
+@EnableFeignClients(basePackages = {"cn.itcast.seatademo.bank2"})
 public class Bank2Server {
 	
 	public static void main(String[] args) {
